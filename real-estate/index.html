@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hearth &amp; Key | Property Listings</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <h1>Hearth &amp; Key</h1>
+    <p>Find a house, apartment or rental that fits your life.</p>
+  </header>
+
+  <!-- Search + filters -->
+  <section class="filters">
+    <input id="search" type="text" placeholder="Search by city or name">
+    <select id="type">
+      <option value="all">All types</option>
+      <option value="House">Houses</option>
+      <option value="Apartment">Apartments</option>
+      <option value="Rental">Rentals</option>
+    </select>
+    <select id="price">
+      <option value="0">Any price</option>
+      <option value="5000000">Under ₹50 lakh</option>
+      <option value="10000000">Under ₹1 crore</option>
+    </select>
+  </section>
+
+  <main>
+    <p id="count"></p>
+    <section id="list" class="grid"></section>
+
+    <h2>Compare homes</h2>
+    <p class="hint">Tick "Compare" on 2 or 3 listings.</p>
+    <div class="scroll"><table id="compare"></table></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
