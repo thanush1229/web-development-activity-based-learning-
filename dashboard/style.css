@@ -1,0 +1,45 @@
+:root { --bg:#f3f5f9; --nav:#1e2a4a; --blue:#3d5afe; --green:#1b8a5a; --red:#c62f3b; }
+* { box-sizing:border-box; }
+body { margin:0; font-family:'Segoe UI',Arial,sans-serif; background:var(--bg); color:#1c2333; }
+
+/* Two columns: fixed 200px sidebar + flexible content */
+.layout { display:grid; grid-template-columns:200px 1fr; min-height:100vh; }
+aside { background:var(--nav); padding:20px; }
+aside h2 { color:#fff; margin-top:0; }
+aside a { display:block; padding:10px; color:#b8c2e0; text-decoration:none; border-radius:6px; margin-bottom:4px; }
+aside a:hover, aside a.on { background:var(--blue); color:#fff; }
+
+.bar { display:flex; align-items:center; gap:12px; padding:16px 24px; background:#fff; border-bottom:1px solid #dde2ee; }
+.bar h1 { margin:0; font-size:1.4rem; }
+#menu { display:none; padding:8px 12px; }
+main { padding:24px; }
+
+/* Four stat cards that wrap when space runs out */
+.cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:16px; margin-bottom:16px; }
+.card, .panel { background:#fff; border-radius:8px; padding:18px; box-shadow:0 1px 4px rgba(0,0,0,.08); }
+.card span { display:block; color:#667; }
+.card strong { font-size:1.8rem; }
+.up { color:var(--green); font-style:normal; font-weight:bold; }
+.down { color:var(--red); font-style:normal; font-weight:bold; }
+
+.panels { display:grid; grid-template-columns:2fr 1fr; gap:16px; margin-bottom:16px; }
+.panel h3 { margin-top:0; }
+.chart { display:flex; align-items:flex-end; gap:10px; height:200px; }
+.bar-col { flex:1; text-align:center; font-size:.8rem; }
+.bar-col div { background:var(--blue); border-radius:4px 4px 0 0; }
+ul { list-style:none; padding:0; margin:0; }
+li { padding:8px 0; border-bottom:1px solid #eceff6; font-size:.95rem; }
+
+.scroll { overflow-x:auto; }
+table { width:100%; border-collapse:collapse; }
+th, td { padding:10px; text-align:left; border-bottom:1px solid #e3e7f1; }
+th { color:#667; }
+
+/* Phones and small tablets: hide the sidebar behind a Menu button */
+@media (max-width:800px) {
+  .layout { grid-template-columns:1fr; }
+  aside { display:none; }
+  aside.open { display:block; }
+  #menu { display:block; }
+  .panels { grid-template-columns:1fr; }
+}

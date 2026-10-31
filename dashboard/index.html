@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Analytics Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- CSS Grid: sidebar on the left, content on the right -->
+  <div class="layout">
+    <aside id="side">
+      <h2>Pulse</h2>
+      <a href="#" class="on">Overview</a>
+      <a href="#">Sales</a>
+      <a href="#">Customers</a>
+      <a href="#">Reports</a>
+      <a href="#">Settings</a>
+    </aside>
+
+    <div>
+      <header class="bar">
+        <button id="menu">Menu</button>
+        <h1>Overview</h1>
+      </header>
+
+      <main>
+        <section class="cards">
+          <div class="card"><span>Revenue</span><strong>₹48.2L</strong><em class="up">+12%</em></div>
+          <div class="card"><span>Active users</span><strong>8,420</strong><em class="up">+5%</em></div>
+          <div class="card"><span>Orders</span><strong>1,236</strong><em class="up">+8%</em></div>
+          <div class="card"><span>Refunds</span><strong>37</strong><em class="down">-3%</em></div>
+        </section>
+
+        <section class="panels">
+          <div class="panel">
+            <h3>Monthly sales (₹ lakh)</h3>
+            <div id="chart" class="chart"></div>
+          </div>
+          <div class="panel">
+            <h3>Recent activity</h3>
+            <ul id="activity"></ul>
+          </div>
+        </section>
+
+        <section class="panel">
+          <h3>Top products</h3>
+          <div class="scroll">
+            <table>
+              <tr><th>Product</th><th>Units</th><th>Revenue</th><th>Trend</th></tr>
+              <tr><td>Wireless Earbuds</td><td>420</td><td>₹8.4L</td><td class="up">Rising</td></tr>
+              <tr><td>Smart Watch</td><td>310</td><td>₹9.3L</td><td class="up">Rising</td></tr>
+              <tr><td>Phone Case</td><td>905</td><td>₹2.7L</td><td class="down">Falling</td></tr>
+              <tr><td>Power Bank</td><td>268</td><td>₹3.2L</td><td class="up">Rising</td></tr>
+            </table>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
