@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IRONWORKS Gym</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <strong>IRONWORKS</strong>
+    <div><a href="#programs">Programs</a> <a href="#trainers">Trainers</a> <a href="#plans">Plans</a> <a href="#schedule">Schedule</a> <a href="#join">Join</a></div>
+  </nav>
+
+  <header class="hero">
+    <h1>LIFT MORE.<br>QUIT LESS.</h1>
+    <p>Strength, cardio and coaching under one roof. First week free.</p>
+    <a class="btn" href="#join">Start free week</a>
+  </header>
+
+  <section id="programs">
+    <h2>WORKOUT PROGRAMS</h2>
+    <div class="cols">
+      <div class="box"><h3>Strength</h3><p>Barbell basics, 3 days a week.</p></div>
+      <div class="box"><h3>Fat Burn</h3><p>Intervals and circuits for stamina.</p></div>
+      <div class="box"><h3>Yoga Flow</h3><p>Mobility, balance and recovery.</p></div>
+    </div>
+  </section>
+
+  <section id="trainers" class="dark">
+    <h2>TRAINERS</h2>
+    <div class="cols">
+      <div class="box"><h3>Ravi K.</h3><p>Powerlifting coach, 9 years.</p></div>
+      <div class="box"><h3>Meena S.</h3><p>Yoga and mobility, 7 years.</p></div>
+      <div class="box"><h3>Arjun P.</h3><p>HIIT and nutrition, 6 years.</p></div>
+    </div>
+  </section>
+
+  <section id="plans">
+    <h2>MEMBERSHIP PLANS</h2>
+    <div class="cols">
+      <div class="box"><h3>Basic</h3><p class="big">₹999<small>/mo</small></p><ul><li>Gym floor access</li><li>Locker room</li></ul></div>
+      <div class="box pick"><h3>Pro</h3><p class="big">₹1,799<small>/mo</small></p><ul><li>Everything in Basic</li><li>All group classes</li><li>Steam room</li></ul></div>
+      <div class="box"><h3>Elite</h3><p class="big">₹2,999<small>/mo</small></p><ul><li>Everything in Pro</li><li>2 personal sessions</li><li>Diet plan</li></ul></div>
+    </div>
+  </section>
+
+  <section class="dark">
+    <h2>FACILITIES</h2>
+    <p class="wide">Free-weight zone, 40 cardio machines, turf area, yoga studio, steam room, showers and a protein bar.</p>
+  </section>
+
+  <section id="schedule">
+    <h2>CLASS SCHEDULE</h2>
+    <div class="scroll">
+      <table>
+        <tr><th>Time</th><th>Mon</th><th>Wed</th><th>Fri</th></tr>
+        <tr><td>6:00 AM</td><td>Strength</td><td>Yoga Flow</td><td>Strength</td></tr>
+        <tr><td>7:30 AM</td><td>Fat Burn</td><td>Fat Burn</td><td>Yoga Flow</td></tr>
+        <tr><td>6:30 PM</td><td>Yoga Flow</td><td>Strength</td><td>Fat Burn</td></tr>
+      </table>
+    </div>
+  </section>
+
+  <section id="join" class="dark">
+    <h2>JOIN TODAY</h2>
+    <form id="form">
+      <input id="name" placeholder="Full name">
+      <input id="email" placeholder="Email">
+      <select id="plan"><option value="">Choose a plan</option><option>Basic</option><option>Pro</option><option>Elite</option></select>
+      <button class="btn" type="submit">Register</button>
+      <p id="msg"></p>
+    </form>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
